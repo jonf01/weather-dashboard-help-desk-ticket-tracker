@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="clock-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⏰ Digital Clock</h1>
+            <p>Current time in different time zones</p>
+        </header>
+
+        <div class="controls">
+            <input 
+                type="text" 
+                id="timezoneInput" 
+                placeholder="Add timezone (e.g., America/New_York)..." 
+                class="timezone-input"
+            >
+            <button id="addBtn" class="add-btn">Add Timezone</button>
+        </div>
+
+        <div class="suggestions">
+            <p>Quick add:</p>
+            <button class="quick-add" data-timezone="America/New_York">New York</button>
+            <button class="quick-add" data-timezone="Europe/London">London</button>
+            <button class="quick-add" data-timezone="Asia/Tokyo">Tokyo</button>
+            <button class="quick-add" data-timezone="Australia/Sydney">Sydney</button>
+            <button class="quick-add" data-timezone="America/Los_Angeles">Los Angeles</button>
+            <button class="quick-add" data-timezone="Europe/Paris">Paris</button>
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <footer>
+            <p>✨ Click on a clock to remove it</p>
+        </footer>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
