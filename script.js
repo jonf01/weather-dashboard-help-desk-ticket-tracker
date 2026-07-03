@@ -1,6 +1,6 @@
 // OpenWeatherMap API Configuration
 // Note: Replace with your own API key from https://openweathermap.org/api
-const API_KEY = 'YOUR_API_KEY_HERE';
+const API_KEY = '4e5e849b065881092f44dad817c86711';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 // DOM Elements
@@ -164,4 +164,4 @@ function hideError() {
 }
 
 // Initialize
-console.log('Weather Dashboard loaded. Add your OpenWeatherMap API key to get started!');
+console.log('Weather Dashboard loaded. API key configured!');
